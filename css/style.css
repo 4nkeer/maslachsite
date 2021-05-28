@@ -4,14 +4,9 @@
     /* border: 1px solid red */
   }
 
-  body {
-  
-  }
 
-  header {
-    background-color: white;
-  }
-
+ 
+  /* шапка */
   .heading {
     margin-top: 20%;
     margin-bottom: 24%;
@@ -20,8 +15,6 @@
     justify-content: center;
     align-items: center;
   }
-
- 
 
   .heading font {
     background-color:rgb(255, 255, 255);
@@ -36,40 +29,6 @@
     transition: 0.3s;
   }
 
-  .categories {
-    margin-left: 5%;
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .categories ul {
-    list-style: none;
-    margin: 0;
-    width: 10%;
-  }
-
-  .categories li {
-    margin: 10px 0;
-  }
-
-  .categories a {
-    width: 100%;
-    color: #000000;
-    text-decoration: none;
-    border-left: 6px solid #3a3a3a;
-    display: block;
-    padding-left: 25px;
-    height: 44px;
-    line-height: 44px;
-    font-size: 20px;
-    transition: 0.3s linear;
-  }
-
-  .categories a:hover {
-    color: rgb(117, 122, 173);
-  }
-
   .background {
     background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
     background-size: 400% 400%;
@@ -80,6 +39,7 @@
     padding:0;
     margin:0px;
   }
+
   .cube {
    position: absolute;
     top: 80vh;
@@ -91,6 +51,7 @@
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
     animation: cube 12s ease-in forwards infinite;
   }
+
   .cube:nth-child(2n) {
     border-color: #FFF ;
   }
@@ -119,8 +80,7 @@
     left: 50vw;
     top: 10vh;
   }
-
-  /* Animate Background*/
+  
   @keyframes Gradient {
     0% {
       background-position: 0% 50%;
@@ -144,20 +104,57 @@
   }
 
 
-  footer {
-    background-color: black;
-    padding-top: 3%;
-    text-align: center;
-  }
+  
+/* категории */
+.cat {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
 
-  .discord {
-      margin-right: 70%;
-  }
- footer a {
-    text-decoration: none;
-    color: white;
-    margin-bottom: 2%;
-  }
+.categories {
+  padding-top:2%;
+  padding-left: 0.5%;
+  width:20%;
+  background: rgb(216,77,255);
+  background: linear-gradient(90deg, rgba(216,77,255,1) 0%, rgba(184,160,255,1) 100%);
+  -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.2);
+  margin-left: 3%;
+  border-radius: 10px;
+}
+
+.categories ul {
+  list-style: none;
+  width: 10%;
+}
+
+.categories li {
+  margin: 10px 0;
+}
+
+.categories a {
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  border-left: 6px solid #ffffff;
+  display: block;
+  padding-left: 25px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 20px;
+  transition: 0.3s linear;
+}
+
+.categories a:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+
+  
 
   .contenthide {
     display:none;
@@ -272,6 +269,7 @@ a, a:hover {
 }
 .postcard .postcard__preview-txt {
   overflow: hidden;
+  cursor: default;
   text-overflow: ellipsis;
   text-align: justify;
   height: 100%;
@@ -372,30 +370,15 @@ a, a:hover {
   }
 }
 /* COLORS */
-.postcard .postcard__tagbox .green.play:hover {
-  background: #79dd09;
-  color: black;
-}
-.green .postcard__title:hover {
-  color: #79dd09;
-}
-.green .postcard__bar {
-  background-color: #79dd09;
-}
-.green::before {
-  background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
-}
-.green:nth-child(2n)::before {
-  background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
-}
+
 .postcard .postcard__tagbox .blue.play:hover {
-  background: #0076bd;
+  background: #ffa5f7;
 }
 .blue .postcard__title:hover {
-  color: #0076bd;
+  color: #bd00ad;
 }
 .blue .postcard__bar {
-  background-color: #0076bd;
+  background-color: #ff9bff;
 }
 .blue::before {
   background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
@@ -403,37 +386,7 @@ a, a:hover {
 .blue:nth-child(2n)::before {
   background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
 }
-.postcard .postcard__tagbox .red.play:hover {
-  background: #bd150b;
-}
-.red .postcard__title:hover {
-  color: #bd150b;
-}
-.red .postcard__bar {
-  background-color: #bd150b;
-}
-.red::before {
-  background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
-}
-.red:nth-child(2n)::before {
-  background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
-}
-.postcard .postcard__tagbox .yellow.play:hover {
-  background: #bdbb49;
-  color: black;
-}
-.yellow .postcard__title:hover {
-  color: #bdbb49;
-}
-.yellow .postcard__bar {
-  background-color: #bdbb49;
-}
-.yellow::before {
-  background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
-}
-.yellow:nth-child(2n)::before {
-  background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
-}
+
 @media screen and (min-width: 769px) {
   .green::before {
     background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
@@ -441,22 +394,22 @@ a, a:hover {
   .green:nth-child(2n)::before {
     background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
   }
-  .blue::before {
-    background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-  }
-  .blue:nth-child(2n)::before {
-    background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-  }
-  .red::before {
-    background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-  }
-  .red:nth-child(2n)::before {
-    background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-  }
-  .yellow::before {
-    background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-  }
-  .yellow:nth-child(2n)::before {
-    background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-  }
+}
+
+
+
+/* футер */
+footer {
+  background-color: black;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.discord {
+  margin-right: 70%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 2%;
 }
