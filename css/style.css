@@ -136,6 +136,13 @@
   margin-right: 5%;
 }
 
+.categories h2 {
+  text-align: center;
+  color:white;
+  margin-bottom: 10%;
+  cursor: default;
+}
+
 .categories {
   padding-top:2%;
   padding-left: 0.5%;
@@ -242,6 +249,14 @@ a, a:hover {
 }
 
 /* дизайн карточек */
+#pageHeaderTitle {
+  text-decoration: underline;
+  color:white;
+  cursor: default;
+  margin-top: -5%;
+  margin-bottom: 7%;
+}
+
 .postcard h1, .postcard .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
