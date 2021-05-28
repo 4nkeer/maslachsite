@@ -21,18 +21,24 @@
 </head>
 <body>
     <!-- Загрузочный экран -->
-    <div id="load">
-        <div>
-            <img src="./images/logo3.gif" alt="" width="200" height="200">
+    <div id="preloader">
+        <div class="pre_wrapper">
+            <span class="icon_animate">
+                <img src="/images/logo3.gif" alt="">
+                <div class="textloading">
+                    <font id="loading" face="lucida console"></font>
+                </div>
+                
+            </span>
         </div>
     </div>
-
+    
     <!-- Шапка -->
     <header>
             <div class="background">
                 <div class="heading">
                     <h1 id="headd">MASLACH</h1>
-                    <font id="descr" face="lucida console">C:\ankeer\MaslachSoft> Hello World!<span class="line"></span></font>
+                    <font id="descr" face="lucida console">C:\ankeer\MaslachSoft> <span id="hellotext"></span></font>
                </div>
                 <div class="cube"></div>
                 <div class="cube"></div>
@@ -103,6 +109,7 @@
             <a href="https://vk.com/4nkeer">ankeer</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

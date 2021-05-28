@@ -6,27 +6,46 @@
 
 
   /* загрузочный экран */
-#load{
-  position: fixed;
-  left: 0;
-  top: 0;
-  right:0;
-  bottom:0;
-  background: #ffffff;
-}
+  #preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 30;
+  }
   
-#load div{
-  position: absolute;
-  left: 45%;
-  top: 35%;
-  text-align:center;
-}
+  .pre_wrapper small {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    top: 100px;
+  }
   
-#load div p{
-  margin-top:20px;
-  color:#FFFFFF;
-} 
+  #preloader .icon_animate {
+    position: absolute;
+    width: 170px;
+    height: 140px;
+    background-size: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* centering end */
+  }
 
+  .textloading {
+    background-color:black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+  }
 
 
   /* шапка */
@@ -41,6 +60,7 @@
 
   .heading font {
     background-color:rgb(255, 255, 255);
+    width: 23.1%;
     font-size: 20px;
     cursor: default;
     transition: 0.3s;
@@ -162,6 +182,7 @@
   color:white;
   margin-bottom: 10%;
   cursor: default;
+  text-decoration: underline;
 }
 
 .categories {
