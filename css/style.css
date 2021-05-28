@@ -207,7 +207,8 @@
   margin: 10px 0;
 }
 
-.categories a {
+.categories p {
+  cursor: pointer;
   width: 100%;
   color: #ffffff;
   text-decoration: none;
@@ -220,7 +221,7 @@
   transition: 0.3s linear;
 }
 
-.categories a:hover {
+.categories p:hover {
   color: rgb(0, 0, 0);
 }
 

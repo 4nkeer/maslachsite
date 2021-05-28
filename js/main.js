@@ -2,17 +2,11 @@
 
 // functions.load();
 
+
+// загрузочный экран
 $(window).on('load', function () {
     var $preloader = $('#preloader');
         $preloader.delay(1100).fadeOut('slow');
-});
-
-$('#games').click(function () {
-    $('.content').load('./content/games.html');
-    });
-
-$('#discord').click(function(){
-    $('.content').load('/content/discord.html');
 });
 
 new TypeIt("#loading", {
@@ -31,6 +25,18 @@ new TypeIt("#loading", {
     .go();
 
 
+
+// смена контента
+$('#games').click(function () {
+    $('.container').load('./content/games.html');
+    });
+
+$('#discord').click(function(){
+    $('.container').load('./content/discord.html');
+});
+
+
+// анимация описания
     new TypeIt("#hellotext", {
         strings: "Hello World!",
         speed: 500,
