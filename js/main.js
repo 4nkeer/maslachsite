@@ -9,3 +9,9 @@ function onIn() {
 function onOut() {
     $('#descr').toggleClass('')
 }
+
+$(window).on('load', function () {
+    
+        $('#load').delay(2500).fadeOut('slow');
+    
+    });
