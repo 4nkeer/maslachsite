@@ -233,6 +233,42 @@ a, a:hover {
 .postcard a {
   color: inherit;
 }
+
+/* авторы */ 
+#ankeer {
+  color: rgb(255, 117, 117);
+}
+#ankeer:hover {
+  color: rgb(255, 43, 43);
+}
+
+#boxemno {
+  color: rgb(140, 169, 250);
+}
+#boxemno:hover {
+  color:rgb(66, 116, 255); 
+}
+
+.hr1{
+
+  margin-bottom: -10px;
+  color:#d8bbff;
+}
+
+.download {
+  margin-top: 5%;
+  text-align: center;
+  width: 15%;
+  background-color: rgb(160, 161, 226);
+  padding: 1%;
+  transition: 0.3s;
+}
+
+.download:hover{
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
 .postcard h1, .postcard .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -320,6 +356,7 @@ a, a:hover {
     justify-content: start;
   }
   .postcard .postcard__img {
+    cursor: default;
     max-width: 300px;
     max-height: 100%;
     transition: transform 0.3s ease;
@@ -359,6 +396,7 @@ a, a:hover {
   .postcard .postcard__text {
     padding: 2rem 3.5rem;
   }
+  
   .postcard .postcard__text:before {
     content: "";
     position: absolute;
@@ -375,7 +413,7 @@ a, a:hover {
   background: #ffa5f7;
 }
 .blue .postcard__title:hover {
-  color: #bd00ad;
+  color: #bbf1ff;
 }
 .blue .postcard__bar {
   background-color: #ff9bff;

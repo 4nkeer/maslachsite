@@ -7,6 +7,9 @@ $(window).on('load', function () {
 
 
 $('#games').click(function () {
-    $('.contenthide').toggleClass('content')
-    $('.contenthide').load('./content/content.html');
+    $('.content').load('./content/games.html');
     });
+
+$('#discord').click(function(){
+    $('.content').load('/content/discord.html');
+})
