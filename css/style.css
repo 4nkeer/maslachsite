@@ -41,7 +41,28 @@
 
   .heading font {
     background-color:rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 20px;
+    cursor: default;
+    transition: 0.3s;
+  }
+
+  .heading font:hover {
+    color: white;
+    background-color:black;
+    transition: 0.3s;
+  }
+
+  .line {
+    padding: 5px;
+    animation: line 1s linear infinite;
+  }
+  @keyframes line {
+    from {
+      background-color:black;
+    }
+    to {
+      background-color: white;
+    }
   }
 
   .heading h1 {
