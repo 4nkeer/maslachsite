@@ -317,6 +317,7 @@ a, a:hover {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  cursor: default;
 }
 
 .postcard .small {
