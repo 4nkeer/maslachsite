@@ -48,6 +48,7 @@
 
 
   /* шапка */
+
   .heading {
     margin-top: 20%;
     margin-bottom: 24%;
@@ -101,6 +102,7 @@
     overflow: hidden;
     padding:0;
     margin:0px;
+    
   }
 
   .cube {
@@ -193,6 +195,7 @@
   margin-bottom: 5%;
   margin-top: 5%;
   padding-top:2%;
+  margin-bottom: 20%;
   padding-left: 0.5%;
   width:20%;
   background: rgb(216,77,255);
@@ -274,7 +277,7 @@ a, a:hover {
   flex-wrap: wrap;
   display: flex;
   background-color: #18151f;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.411);
   border-radius: 10px;
   margin: 0 0 2rem 0;
   overflow: hidden;
