@@ -1,6 +1,8 @@
 <head>
     <link rel="stylesheet" href="./css/discord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
+<body>
 
     <main class="container">
         <div class="h1 text-center" id="pageHeaderTitle">Discord Софт</div>
@@ -13,10 +15,17 @@
                     </time>
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Бот "Ауешник".
-                    <br>
+                <div class="postcard__preview-txt">
+                    Бот умеет/у бота есть:
                     <ul>
-                        <li>Мутить</li>
+                        <li>Мутить + мутить на время</li>
+                        <li>Проигрывать музыку</li>
+                        
+                        <div id="ex1" class="modal">
+                         <font face="lucida console"><span id="secret"></span></font>
+                          </div>
+                          <li><a id="ex" rel="modal:open">Имеет секретную команду</a></li>
+                        <li></li>
                     </ul>
                     <hr class="hr1">
                   <br>  <span>Разработчик:</span> <a target="_blank" id="ankeer" href="https://vk.com/4nkeer">ankeer</a>
@@ -27,3 +36,6 @@
             </div>
         </article>
     </main>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./js/main.js"></script>

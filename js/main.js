@@ -39,6 +39,23 @@ $('#discord').click(function(){
 // анимация описания
     new TypeIt("#hellotext", {
         strings: "Hello World!",
-        speed: 500,
-        waitUntilVisible: true
+        speed: 150,
+        waitUntilVisible: false
       }).go();
+
+$('#ex').click(function(){
+  $('#ex1').modal({
+    fadeDuration: 100,
+    showClose: false
+  });
+  return false;
+});
+
+// анимация описания
+new TypeIt("#secret", {
+  strings: "Не скажу :)",
+  speed: 200,
+  waitUntilVisible: true,
+  cursor: false
+}).go();
+
