@@ -195,7 +195,7 @@
   margin-bottom: 5%;
   margin-top: 5%;
   padding-top:2%;
-  margin-bottom: 20%;
+  margin-bottom: 40%;
   padding-left: 0.5%;
   width:20%;
   background: rgb(216,77,255);
@@ -302,6 +302,15 @@ a, a:hover {
 .download:hover{
   border-radius: 8px;
   transition: 0.3s;
+}
+
+.not-download {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.not-download:hover{
+  border-radius: 0px;
 }
 
 /* дизайн карточек */

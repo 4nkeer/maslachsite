@@ -323,6 +323,69 @@ a, a:hover {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .postcard2 {
+    flex-wrap: inherit;
+  }
+  .postcard2 .postcard__title {
+    font-size: 2rem;
+  }
+  .postcard2 .postcard__tagbox {
+    justify-content: start;
+  }
+  .postcard2 .postcard__img {
+    cursor: default;
+    max-width: 300px;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+  }
+  .postcard2 .postcard__text {
+    padding: 2rem;
+    width: 100%;
+  }
+  .postcard2 .media.postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #18151f;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+  .postcard2:hover .postcard__img {
+    transform: scale(1.1);
+  }
+  .postcard2:nth-child(2n+1) {
+    flex-direction: row;
+  }
+  .postcard2:nth-child(2n+0) {
+    flex-direction: row-reverse;
+  }
+  .postcard2:nth-child(2n+1) .postcard__text::before {
+    left: -12px !important;
+    transform: rotate(4deg);
+  }
+  .postcard2:nth-child(2n+0) .postcard__text::before {
+    right: -12px !important;
+    transform: rotate(-4deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .postcard2 .postcard__text {
+    padding: 2rem 3.5rem;
+  }
+  
+  .postcard2 .postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #18151f;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+}
 
 /* пасхалка */
 #ex1 {
