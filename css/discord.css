@@ -1,3 +1,6 @@
+
+
+
 /* карточки */
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
@@ -35,8 +38,10 @@ a, a:hover {
   color: inherit;
 }
 
-/* кнопка скачивания */
-.download2 {
+
+
+/* кнопка приглашения */
+.invite {
   margin-top: 5%;
   text-align: center;
   width: 35%;
@@ -44,9 +49,13 @@ a, a:hover {
   padding: 1%;
   transition: 0.3s;
 }
-.download2:hover{
+.invite:hover{
   border-radius: 8px;
   transition: 0.3s;
+}
+
+#ex:hover {
+  color: rgb(145, 145, 252);
 }
 
 /* дизайн карточек */
@@ -71,7 +80,6 @@ a, a:hover {
 .postcard2 .postcard__title {
   font-size: 1.75rem;
 }
-
 
 .postcard2 .postcard__bar {
   width: 50px;
@@ -191,6 +199,7 @@ a, a:hover {
   }
 }
 
+
 /* цвет */
 .postcard2 .postcard__tagbox .blue.play:hover {
   background: #ffa5f7;
@@ -220,6 +229,7 @@ a, a:hover {
     background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
   }
 }
+
 #ex1 {
   height: 10%;
   text-align: center;
@@ -230,6 +240,8 @@ a, a:hover {
   color: white;
 }
 
+
+
 /* авторы */ 
 #ankeer {
   color: rgb(255, 117, 117);
@@ -238,21 +250,7 @@ a, a:hover {
   color: rgb(255, 43, 43);
 }
 
-#boxemno {
-  color: rgb(140, 169, 250);
-}
-#boxemno:hover {
-  color:rgb(66, 116, 255); 
-}
 
-
-/* персонажи */
-#pers {
-  color:rgb(180, 255, 180);
-}
-#pers:hover {
-  color: rgb(78, 250, 78);
-}
 
 /* Линия */
 .hr1{
