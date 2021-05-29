@@ -233,11 +233,13 @@ a, a:hover {
   height: 10%;
   text-align: center;
   background-color:black;
+  padding-top: 1.5%;
 }
 
 #ex1 font {
   color: white;
 }
+
 
 #ex:hover {
   color: rgb(145, 145, 252);
