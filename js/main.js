@@ -38,10 +38,15 @@ $('#discord').click(function(){
 
 // анимация описания
     new TypeIt("#hellotext", {
-        strings: "Hello World!",
-        speed: 500,
+        startDelay:1200,
+        strings: "Hello World1",
+        speed: 250,
         waitUntilVisible: false
-      }).go();
+      })
+      .pause(800)
+      .delete(-1)
+      .type("!")
+      .go();
 
 
 
