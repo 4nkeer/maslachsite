@@ -1,8 +1,9 @@
 <head>
     <link rel="stylesheet" href="./css/discord.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
-<body>
 
     <main class="container">
         <div class="h1 text-center" id="pageHeaderTitle">Discord Софт</div>
@@ -22,9 +23,9 @@
                         <li>Проигрывать музыку</li>
                         
                         <div id="ex1" class="modal">
-                         <font face="lucida console"><span id="secret"></span></font>
+                            <font face="lucida console"><span id="secret"></span></font>
                           </div>
-                          <li><a id="ex" rel="modal:open">Имеет секретную команду</a></li>
+                          <li><a id="ex" href="#ex1" rel="modal:open">Имеет секретную команду</a></li>
                         <li></li>
                     </ul>
                     <hr class="hr1">
@@ -36,6 +37,6 @@
             </div>
         </article>
     </main>
-</body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/secret.js"></script>
