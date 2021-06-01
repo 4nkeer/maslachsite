@@ -280,6 +280,12 @@ a, a:hover {
     }
   }
 
+
+  @media all and (min-width:1280px) and (max-width:1500px) {
+    .download {
+      width: 50%;
+    }
+  }
 /* авторы */ 
 #ankeer {
   color: rgb(255, 117, 117);
