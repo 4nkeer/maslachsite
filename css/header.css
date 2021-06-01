@@ -68,7 +68,7 @@
      height: 60%;
    }
 
-   .heading font {
+   .heading #descr {
      font-size: 10px;
    }
  }
