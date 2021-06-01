@@ -55,16 +55,8 @@
     background-color: white;
   }
   
-  @media all and(min-width: 720px) and (max-width: 1280px) {
-    .parallax {
-      background-size: 150%;
-    }
-  }
 
   @media all and (min-width:200px) and (max-width:400px) {
-    .parallax {
-      background-size: 350%;
-    }
     .categories ul {
       width: 100%;
     }
@@ -78,6 +70,7 @@
       margin-left: auto;
       margin-right: auto;
       padding-top: 5%;
+      margin-bottom: 0%;
     }
     
     .categories p {

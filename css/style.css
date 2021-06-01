@@ -15,6 +15,7 @@
   box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.158) inset;
 }
 
+
 /* футер */
 footer {
   background-color: black;
@@ -30,4 +31,19 @@ footer a {
   text-decoration: none;
   color: white;
   margin-bottom: 2%;
+}
+
+
+@media all and (min-width:200px) and (max-width:400px){
+  .parallax {
+    background: none;
+    box-shadow:none;
+    padding-bottom:0% ;
+  }
+}
+
+@media all and (min-width: 720px) and (max-width: 1280px) {
+  .parallax {
+    background-size: 150%;
+  }
 }

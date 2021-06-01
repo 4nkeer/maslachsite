@@ -18,22 +18,6 @@ a, a:hover {
   font-size: 2.5rem;
 }
 
-.postcard {
-  flex-wrap: wrap;
-  display: flex;
-  background-color: #18151f;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.411);
-  border-radius: 10px;
-  margin: 0 0 2rem 0;
-  overflow: hidden;
-  position: relative;
-  color: #ffffff;
-}
-
-.postcard a {
-  color: inherit;
-}
-
 /* кнопка скачивания */
 .download {
   margin-top: 5%;
@@ -58,13 +42,23 @@ a, a:hover {
 }
 
 /* дизайн карточек */
-#pageHeaderTitle {
-  text-decoration: underline;
-  color:white;
-  cursor: default;
-  margin-top: -5%;
-  margin-bottom: 7%;
+
+.postcard {
+  flex-wrap: wrap;
+  display: flex;
+  background-color: #18151f;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.411);
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
 }
+
+.postcard a {
+  color: inherit;
+}
+
 
 .postcard h1, .postcard .h1 {
   margin-bottom: 0.5rem;
