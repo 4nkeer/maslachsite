@@ -109,11 +109,11 @@
 
  @media all and (min-width:200px) and (max-width:400px) {
    .heading h1 {
-     font-size: 40px;
+     font-size: 50px;
    }
 
    .background {
-     height: 50%;
+     height: 60%;
    }
 
    .cube {
@@ -121,6 +121,6 @@
    }
 
    .heading font {
-     font-size: 15px;
+     font-size: 10px;
    }
  }
