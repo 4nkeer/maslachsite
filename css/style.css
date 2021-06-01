@@ -4,6 +4,10 @@
     /* border: 1px solid red */
   }
 
+@font-face {
+  font-family: "Panton";
+  src: url("../fonts/panton.otf");
+}
 
 .parallax {
   padding-bottom: 10%;
@@ -18,7 +22,6 @@
 iframe {
   display: none;
 }
-
 
 .show {
   display: flex;
@@ -51,17 +54,43 @@ iframe {
 
 /* футер */
 footer {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
   background-color: black;
   padding-top: 3%;
+  padding-bottom: 3%;
   text-align: center;
+  -webkit-box-shadow: 0px -9px 8px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px -9px 8px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 0px -9px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
-footer a {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 2%;
+.author {
+  width: 5%;
+  display: flex;
+  margin-left: 5%;
 }
 
+.author a {
+  background-color:white;
+  border-radius: 5px;
+  color:black;
+  font-size: 50px;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  font-family: "Panton";
+}
+
+.author a:hover {
+  background-color:black;
+  color:white;
+  transition: 0.3s;
+}
 
 @media all and (min-width:200px) and (max-width:400px){
   .parallax {

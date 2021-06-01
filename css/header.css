@@ -56,16 +56,6 @@
       background-position: 0% 50%;
     }
   }
-  @keyframes cube {
-    from {
-      transform: scale(0) rotate(0deg) translate(-50%, -50%);
-      opacity: 1;
-    }
-    to {
-      transform: scale(20) rotate(960deg) translate(-50%, -50%);
-      opacity: 0;
-    }
-  }
 
  @media all and (min-width:200px) and (max-width:400px) {
    .heading h1 {
