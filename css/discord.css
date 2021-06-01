@@ -43,6 +43,7 @@ a, a:hover {
   .postcard2 {
     background-size: 300%;
   }
+
 }
 
 .postcard2 a {
@@ -66,9 +67,12 @@ a, a:hover {
   .invite {
     width: 100%;
   }
+
 }
 
 .download-beta {
+  padding: 1%;
+  text-align: center;
   width: 15%;
   background-color:rgb(160, 161, 226);
   cursor: pointer;
