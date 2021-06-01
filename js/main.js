@@ -49,4 +49,3 @@ $('#discord').click(function(){
       .go();
 
 
-

@@ -15,16 +15,38 @@
   box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.158) inset;
 }
 
+iframe {
+  display: none;
+}
+
+
+.show {
+  display: flex;
+  position: fixed;
+  bottom: 90px; 
+  right: 15px; 
+}
+
+#dis img {
+  width: 70px;
+}
+
+#dis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  bottom: 15px; 
+  right: 15px; 
+  position: fixed;
+  cursor:pointer;
+}
+
 
 /* футер */
 footer {
   background-color: black;
   padding-top: 3%;
   text-align: center;
-}
-
-.discord {
-  margin-right: 70%;
 }
 
 footer a {
