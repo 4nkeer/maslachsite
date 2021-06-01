@@ -55,6 +55,16 @@ a, a:hover {
   color: #ffffff;
 }
 
+.postcard__preview-txt #novella {
+  display: none;
+}
+
+@media all and (min-width:200px) and (max-width:400px) {
+  .postcard__preview-txt #novella {
+    display: flex;
+  }
+}
+
 .postcard a {
   color: inherit;
 }

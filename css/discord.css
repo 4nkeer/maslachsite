@@ -13,11 +13,16 @@ a, a:hover {
   margin-top: 2rem;
 }
 
-#pageHeaderTitle {
-  margin: 2rem 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.5rem;
+.darktheme {
+  background-image:url('../images/bgtheme.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.bot {
+  background-image:url('../images/bgdisc.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
 }
 
 .postcard2 {
@@ -31,8 +36,18 @@ a, a:hover {
   overflow: hidden;
   position: relative;
   color: #ffffff;
+  background-size: 100%;
 }
 
+@media all and (min-width:200px) and (max-width:400px) {
+  .postcard2 {
+    background-size: 250%;
+  }
+
+  .download-beta {
+    width: 50%;
+  }
+}
 
 .postcard2 a {
   color: inherit;
@@ -51,6 +66,11 @@ a, a:hover {
   opacity: 0.5;
 }
 
+@media all and (min-width:200px) and (max-width:400px) {
+  .invite {
+    width: 100%;
+  }
+}
 
 .download-beta {
   width: 15%;
@@ -72,6 +92,13 @@ a, a:hover {
   cursor: default;
   margin-top: -5%;
   margin-bottom: 7%;
+}
+
+@media all and (min-width:200px) and (max-width:400px) {
+  #pageHeaderTitle {
+    font-size: 20px;
+  }
+
 }
 
 .postcard2 h1 {
@@ -180,7 +207,7 @@ a, a:hover {
     padding: 2rem;
     width: 100%;
   }
-  .postcard2 .media.postcard__text:before {
+  .postcard2 .media:before {
     content: "";
     position: absolute;
     display: block;
@@ -294,15 +321,6 @@ a, a:hover {
     padding: 2rem 3.5rem;
   }
   
-  .postcard2 .postcard__text:before {
-    content: "";
-    position: absolute;
-    display: block;
-    background: #18151f;
-    top: -20%;
-    height: 130%;
-    width: 55px;
-  }
 }
 
 /* пасхалка */
