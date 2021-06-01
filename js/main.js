@@ -14,7 +14,6 @@ new TypeIt("#loading", {
   })
     .type("Loading")
     .exec(async () => {
-      //-- Return a promise that resolves after something happens.
       await new Promise((resolve, reject) => {
         setTimeout(() => {
           return resolve();
@@ -41,7 +40,8 @@ $('#discord').click(function(){
         startDelay:1200,
         strings: "Hello World1",
         speed: 250,
-        waitUntilVisible: false
+        waitUntilVisible: false,
+        cursor: false
       })
       .pause(800)
       .delete(-1)

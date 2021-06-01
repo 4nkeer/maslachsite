@@ -11,12 +11,12 @@
 
   .heading font {
     background-color:rgb(255, 255, 255);
-    width: 23.1%;
     font-size: 20px;
     cursor: default;
     transition: 0.3s;
-  }
-
+   
+  } 
+  
   .heading font:hover {
     color: white;
     background-color:black;
@@ -107,7 +107,7 @@
     }
   }
 
-  @media all and (min-width: 1600px) and (max-width: 1800px) {
+  /* @media all and (min-width: 1600px) and (max-width: 1800px) {
     .heading font {
       width: 26.2%;
     }
@@ -124,4 +124,4 @@
     .heading font {
       width: 34%;
     }
-  }
+  } */
