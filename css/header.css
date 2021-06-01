@@ -1,5 +1,6 @@
   /* шапка */
 
+
   .heading {
     margin-top: 20%;
     margin-bottom: 24%;
@@ -9,15 +10,16 @@
     align-items: center;
   }
 
-  .heading font {
+  .heading #descr {
     background-color:rgb(255, 255, 255);
     font-size: 20px;
     cursor: default;
     transition: 0.3s;
+    font-family: "Lucida";
    
   } 
   
-  .heading font:hover {
+  .heading #descr:hover {
     color: white;
     background-color:black;
     transition: 0.3s;
