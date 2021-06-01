@@ -263,13 +263,18 @@ a, a:hover {
       background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
     }
   }
-  
+
   @media all and (min-width:720px) and (max-width:1280px){
     .download {
       width: 50%;
     }
-    
-}
+  }
+
+  @media all and (min-width:200px) and (max-width:400px) {
+    .download {
+      width: 70%;
+    }
+  }
 
 /* авторы */ 
 #ankeer {

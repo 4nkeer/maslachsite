@@ -1,8 +1,4 @@
 /* категории */
-.cat {
-    display: flex;
-  }
-  
   
   
   .categories {
@@ -22,28 +18,21 @@
   }
   
   .categories ul {
-    list-style: none;
-    width: 35%;
+    width: 50%;
     display: flex;
+    padding: 0;
   }
   
-
 
   .categories li {
     display: inline-block;
     margin:auto;
     text-align: center;
     width: 25%;
-    border: 2px solid white;
     border-radius: 5px;
-    padding: 1%;
     transition: 0.3s;
   }
 
-  .categories li:hover {
-    background-color: white;
-    transition: 0.3s;
-  }
 
   .categories p {
     border-left: none;
@@ -56,10 +45,14 @@
     display: block;
     font-size: 20px;
     transition: 0.3s linear;
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid white;
   }
   
   .categories p:hover {
     color: rgb(0, 0, 0);
+    background-color: white;
   }
   
   @media all and(min-width: 720px) and (max-width: 1280px) {
@@ -70,6 +63,24 @@
 
   @media all and (min-width:200px) and (max-width:400px) {
     .parallax {
-      background-size: 350%
+      background-size: 350%;
+    }
+    .categories ul {
+      width: 100%;
+    }
+
+    .categories li {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .categories {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+    
+    .categories p {
+      font-size: 15px;
     }
   }
