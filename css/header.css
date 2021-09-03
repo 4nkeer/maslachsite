@@ -42,6 +42,7 @@
 
 .buttondiscord {
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .buttondiscord a {
