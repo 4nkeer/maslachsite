@@ -1,74 +1,202 @@
-  /* шапка */
+.head {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(112,0,164,1) 100%);
+    padding-top: 15%;
+    padding-bottom: 15%;
+    margin: auto;
+}
 
-
-  .heading {
-    margin-top: 20%;
-    margin-bottom: 24%;
+.boxs {
     display: flex;
     flex-direction: column;
+}
+
+.discord {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-  }
+}
 
-  .heading #descr {
-    background-color:rgb(255, 255, 255);
-    font-size: 20px;
-    cursor: default;
-    transition: 0.3s;
-    font-family: "Lucida";
-   
-  } 
-  
-  .heading #descr:hover {
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text h1 {
     color: white;
-    background-color:black;
-    transition: 0.3s;
-  }
-
-
-  .heading h1 {
-    color: white;
-    font-family: 'Roboto Slab', serif;
-    cursor: default;
+    font-family: 'Bebas Neue', cursive;
     font-size: 100px;
+    cursor: default;
+    margin-bottom: -3%;
+    letter-spacing: 5px;
+}
+
+.textp {
+    padding: 0%;
+    margin:0% ;
+    color: white;
+    cursor: default;
+    margin-bottom: 2%;
+}
+
+.buttondiscord {
+    margin-top: 5%;
+}
+
+.buttondiscord a {
+    padding: 3%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(36, 130, 238);
     transition: 0.3s;
-  }
+}
 
-  .background {
-    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    padding:0;
-    margin:0px;
-    
-  }
+.buttondiscord a:hover {
+    border-radius: 10px;
+    background-color:rgb(5, 105, 219);
+}
 
-  
-  @keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+.imgdiscord {
+    margin-left: 11%;
+    -webkit-transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
- @media all and (min-width:200px) and (max-width:400px) {
-   .heading h1 {
-     font-size: 50px;
-   }
+.imgdiscord:hover{
+    -webkit-transition: 0.3s;
+    -webkit-filter: brightness(1.1);
+    -webkit-transform: scale(1.1);
+}
 
-   .background {
-     height: 60%;
-   }
+.icons {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 88%;
+    top: 3%;
+    margin: auto;
+}
+.ds {
+    padding-left: 10%;
+}
 
-   .heading #descr {
-     font-size: 10px;
-   }
- }
+.vk {
+    padding-right: 10%;
+}
+.ds img {
+    filter: brightness(2) invert(1);
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.ds img:hover {
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.vk img {
+    filter: brightness(2) ;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.vk img:hover {
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
+    opacity: 1;
+}
+.yt {
+    padding-left: 17%;
+}
+
+.yt img {
+    filter: brightness(2);
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.yt img:hover {
+    filter: brightness(5) invert(1);
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.dashboard {
+    top: 4%;
+    position: absolute;
+    width: 15%;
+    text-align: center;
+}
+
+.dashboard a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    width: 24%;
+}
+
+.dashboard img{
+    margin-right: 4%;
+}
+
+
+.dashboard span {
+    filter: brightness(2) invert(1);
+    transition: 0.3s;
+    opacity: 0.3;
+    color: black;
+    font-size: 20px;
+}
+
+.dashboard span:hover {
+    filter: brightness(2) invert(1);
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.discordtheme {
+    margin-top: 18%;
+}
+
+.texttheme {
+    margin-right:1%;
+
+}
+
+.imgdiscordtheme {
+    margin-left: 6%;
+}
+
+.buttondiscordtheme {
+    margin-top: 0%;
+    opacity: 0.5;
+}
+
+.buttondiscordtheme a:hover {
+    cursor: no-drop;
+    border-radius:0;
+    background-color:rgb(36, 130, 238);
+}
+
+.descr {
+    color: white;
+    background-color: rgb(8, 0, 36);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.commands {
+    margin-bottom: 5%;
+}
+
+.gameeya {
+    margin-top: 18%;
+}
+
+.imggame {
+    margin-left: 20%;
+}
+
+.gtext {
+    margin-right: -3%;
+}

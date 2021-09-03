@@ -2,6 +2,11 @@
 
 // functions.load();
 
+$('#btn').hover(function(){
+  $(this).text("Скоро");
+}, function() {
+  $(this).text("Скачать");
+});
 
 // загрузочный экран
 $(window).on('load', function () {
@@ -35,6 +40,7 @@ $('#discord').click(function(){
 });
 
 
+
 // анимация описания
     new TypeIt("#hellotext", {
         startDelay:1200,
@@ -47,5 +53,3 @@ $('#discord').click(function(){
       .delete(-1)
       .type("!")
       .go();
-
-

@@ -1,0 +1,152 @@
+<!-- Author: ankeer -->
+<!-- Date of development: 27/05/2021 -->
+<!-- Name: MaslachSoft -->
+<!-- Discord: ankeer#6203 -->
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-198162400-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-198162400-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <!-- Стили/Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/loadscreen.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="test.css">
+    <!-- Шрифты/Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <!-- Typeit -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./images/ico.png">
+
+    <title>MaslachSoft</title>
+</head>
+<body>
+    <!-- Загрузочный экран/Load screen -->
+    <div id="preloader">
+        <div class="pre_wrapper">
+            <span class="icon_animate">
+              <div class="textloading">
+                  ><span id="loading" face="lucida console"></span>
+                </div>
+            </span>
+        </div>
+    </div>
+    <!-- Шапка/Header -->
+    <header class="head">
+             <div class="dashboard">
+                <a href=""><span><img width="40"  src="./images/dashboardlogo.png">Панель управления</span></a>
+            </div>
+        <div class="icons">
+            <div class="vk">
+                <a target="_blank" href="https://vk.com/4nkeer"><img width="40" src="./images/vklogo.png"></a>
+            </div>
+            <div class="ds">
+                <a target="_blank" href="https://discord.com/invite/XgNrkF48K5"><img width="40" src="./images/discord.png"></a>
+            </div>
+            <div class="yt">
+                <a target="_blank" href="https://youtube.com/playlist?list=PLrTz7mJY3wsotNdigDCBH6xVIIEGnB4vb"><img width="40" src="./images/ytlogo.png"></a>
+            </div>
+        </div>
+        <div class="boxs">
+            <div class="discord">
+                <div class="text">
+                    <h1>DiscordBot</h1>
+                    <div class="textp">
+                        <p>Многофункциональный бот с секретной функцией😊🤭😋</p>
+                        <code class="commands">
+                            <span class="descr">.очистить <количество></span> - удаление сообщений 
+                           <br>
+                            <span class="descr">.опрос <вопрос></span> - опрос реакциями
+                           <br>
+                            <span class="descr">.мут <@name></span> - мут чела
+                           <br>
+                            <span class="descr">.врем <@name> (m,h,d)</span> - мут чела на время
+                           <br>
+                            <span class="descr">.анмут <@name></span> - анмут чела
+                           <br>
+                            <span class="descr">.фонк <ссылка на ютуб></span> - музыка бля
+                           <br>
+                            <span class="descr">.съебал</span> - чтобы съебал бот
+                           <br>
+                            <span class="descr">.инф | .инф <@name></span> - пробить чела</code>
+                    </div>
+                    <div class="buttondiscord">
+                        <a href="">Подключить</a>
+                    </div>
+                </div>
+                <div class="imgdiscord">
+                    <img width="400" src="./images/logodiscord.png">
+                </div>
+            </div>
+            <div class="discord discordtheme">
+                <div class="text texttheme">
+                    <h1>DiscordTheme</h1>
+                    <div class="textp">
+                        <p>Тема дискорд</p>
+                    </div>
+                    <div class="buttondiscord buttondiscordtheme">
+                        <a id="btn" href="">Скачать</a>
+                    </div>
+                </div>
+                <div class="imgdiscord imgdiscordtheme">
+                    <img width="410" src="./images/discordtheme.png">
+                </div>
+            </div>
+            <div class="gameeya discord">
+                <div class="text gtext">
+                    <h1>eyagame 1</h1>
+                    <div class="textp">
+                        <p>Визуалльная новелла про 6-ых еуашников</p>
+                    </div>
+                    <div class="buttondiscord">
+                        <a>Скачать</a>
+                    </div>
+                </div>
+                <div class="imgdiscord imggame">
+                    <img width="470" src="./images/gamelogo.png" alt="">
+                </div>
+            </div>
+           
+        </div>
+    </header>
+
+    <!-- Футер/Footer -->
+    <footer>
+    
+    
+    </footer>
+    <script src="https://raw.githack.com/mburakerman/prognroll/master/src/prognroll.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- File js -->
+    <script src="./js/main.js"></script>
+    <script src="./js/WidgetDS.js"></script>
+</body>
+</html>

@@ -9,116 +9,23 @@
   src: url("../fonts/panton.otf");
 }
 
-.parallax {
-  padding-bottom: 10%;
-  background-image: url('../images/bg.jpg');
-  background-attachment: fixed;
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size: 100%;
-  box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.158) inset;
+body::-webkit-scrollbar {
+  width: 8px;               /* ширина scrollbar */
 }
-
-
-/* Виджет дискорд+кнопка */
-iframe {
-  display: none;
+body::-webkit-scrollbar-track {
+  background: rgba(112,0,164,1);        /* цвет дорожки */
 }
-
-.show {
-  display: flex;
-  position: fixed;
-  bottom: 90px; 
-  right: 15px; 
-}
-
-#dis img {
-  width: 65px;
-}
-
-#dis:hover {
-  filter: brightness(1.15);
-  -webkit-transform: scale(1.1) rotate(360deg);;
-  transition: 0.3s;
-}
-
-#dis {
-  transition: 0.3s;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  bottom: 15px; 
-  right: 15px; 
-  position: fixed;
-  cursor:pointer;
-}
-
-
-/* футер */
-footer {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
-  background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
-  overflow: hidden;
-  padding:0;
-  margin:0px;
-  background-color: black;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  text-align: center;
-  -webkit-box-shadow: 0px -9px 8px 0px rgba(34, 60, 80, 0.2);
--moz-box-shadow: 0px -9px 8px 0px rgba(34, 60, 80, 0.2);
-box-shadow: 0px -9px 8px 0px rgba(34, 60, 80, 0.2);
-}
-
-/* Автор */
-.author {
-  width: 5%;
-  display: flex;
-}
-
-.author a {
-  background-color:white;
-  border-radius: 5px;
-  color:black;
-  font-size: 50px;
-  height: 100%;
-  width: 100%;
-  transition: 0.3s;
-  font-family: "Panton";
-}
-
-.author a:hover {
-  background-color:black;
-  color:white;
-  transition: 0.3s;
-  -webkit-box-shadow: 0px 0px 26px 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 26px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 26px 10px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.1);
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
 }
 
 @media all and (min-width:200px) and (max-width:400px){
-  .parallax {
-    background: none;
-    box-shadow:none;
-    padding-bottom:0% ;
-  }
 
-  .author {
-    width: 9%;
-  }
-
-  .author a {
-    font-size: 20px;
-  }
 }
 
 @media all and (min-width: 720px) and (max-width: 1280px) {
-  .parallax {
-    background-size: 150%;
-  }
+
 }
+
+
